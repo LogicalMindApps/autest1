@@ -17,6 +17,10 @@ export default {
   name: 'PageIndex',
   methods: {
     check () {
+      const isDev = require('electron-is-dev')
+      console.log('Is development node:')
+      console.log(isDev)
+
       // const { app, autoUpdater, dialog } = require('electron').remote
       const { app, autoUpdater } = require('electron').remote
       const server = 'https://autest1-qjk2fk570.vercel.app'

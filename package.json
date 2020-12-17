@@ -2,18 +2,20 @@
   "name": "autest1",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "productName": "Electron Auto Update Test App",
   "author": "kabirov_roman <roman.kabirov@mail.ru>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev -m electron",
-    "build": "quasar build -m electron -T win32"
+    "build": "quasar build -m electron",
+    "build:win32": "quasar build -m electron -T win32 -arch x64"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
+    "electron-is-dev": "^1.2.0",
     "electron-squirrel-startup": "^1.0.0",
     "electron-winstaller": "^4.0.1",
     "quasar": "^1.0.0",
