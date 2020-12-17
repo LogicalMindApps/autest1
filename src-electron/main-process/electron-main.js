@@ -40,6 +40,8 @@ function createWindow () {
   mainWindow.on('closed', () => {
     mainWindow = null
   })
+
+  // require('update-electron-app')()
 }
 
 app.on('ready', createWindow)
