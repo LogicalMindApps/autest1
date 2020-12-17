@@ -41,6 +41,7 @@ function createWindow () {
     mainWindow = null
   })
 
+  if (require('electron-squirrel-startup')) return
   // require('update-electron-app')()
 }
 

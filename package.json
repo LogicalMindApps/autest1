@@ -1,6 +1,6 @@
 {
   "name": "autest1",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A Quasar Framework app",
   "productName": "Quasar App",
   "author": "kabirov_roman <roman.kabirov@mail.ru>",
@@ -9,11 +9,12 @@
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev -m electron",
-    "build": "quasar build -m electron"
+    "build": "quasar build -m electron -t darwin"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
+    "electron-squirrel-startup": "^1.0.0",
     "electron-winstaller": "^4.0.1",
     "quasar": "^1.0.0",
     "update-electron-app": "^2.0.1"
