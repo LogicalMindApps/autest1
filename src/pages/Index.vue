@@ -19,8 +19,12 @@ export default {
     check () {
       // const { app, autoUpdater, dialog } = require('electron').remote
       const { app, autoUpdater } = require('electron').remote
-      const server = 'https://your-deployment-url.com'
+      const server = 'https://autest1-qjk2fk570.vercel.app'
       const url = `${server}/update/${process.platform}/${app.getVersion()}`
+
+      console.log('url:')
+      console.log(url)
+
       autoUpdater.setFeedURL({ url })
       autoUpdater.checkForUpdates()
 
