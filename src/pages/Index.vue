@@ -8,6 +8,9 @@
       <div class="col-auto">
         <q-btn label="Check for updates" @click="check" />
       </div>
+      <div class="col-auto">
+        This is 0.0.2 version.
+      </div>
     </div>
   </q-page>
 </template>
